@@ -1,0 +1,187 @@
+:root {
+    --coloreBlue: rgb(6, 57, 108);
+    --coloreBlueA: rgba(6, 57, 108, 0.5);
+    --coloreGray: gray;
+}
+
+* {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.el,
+h1,
+h2,
+h3,
+h4,
+.numero {
+    font-family: "Electrolize", Arial, Helvetica, sans-serif;
+}
+
+.bg-blue {
+    background-color: var(--coloreBlue);
+}
+
+.c-blue {
+    color: var(--coloreBlue);
+}
+
+.c-gray {
+    color: var(--coloreGray);
+}
+
+/* intestazione */
+.head-bg {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('./media/header.jpg');
+    background-size: cover;
+}
+
+.head-img {
+    height: 2.5rem;
+    width: auto;
+}
+
+/* main */
+/* vigolette tre colonne */
+.virgolette::before {
+    content: "\"";
+    color: var(--coloreBlue);
+    font-size: 6.5rem;
+    position: absolute;
+    top: -65px;
+    left: -35px;
+    rotate: 15deg;
+}
+
+/* power lorem */
+.power-bg {
+    height: 50vh;
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('./media/power-plant-4712830_1280.jpg');
+    background-size: cover;
+}
+
+/* 4 cards citta */
+.card-bg-1 {
+    background-image: url("./media/california.jpg");
+}
+
+.card-bg-2 {
+    background-image: url("./media/nevada.jpg");
+    background-position: bottom;
+}
+
+.card-bg-3 {
+    background-image: url("./media/new_york.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-bg-4 {
+    background-image: url("./media/texsas.jpg");
+    background-position: top;
+}
+
+.cards {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.cards::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--coloreBlueA), transparent 40%);
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    z-index: 2;
+}
+
+/* some stuff */
+.bg-row {
+    background: linear-gradient(var(--coloreBlue) 40%, white 40%);
+}
+
+.bg-card-1 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/sun.png');
+}
+
+.bg-card-2 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/wind.png');
+}
+
+.bg-card-3 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/wave.png');
+}
+
+.bg-card-4 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/gas.png');
+}
+
+.bg-card-5 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/oil.png');
+}
+
+.bg-card-6 {
+    background: linear-gradient(var(--coloreBlueA), var(--coloreBlueA)), url('media/nuclear.png');
+}
+
+.bg-c {
+    background-position: top;
+    background-size: cover;
+}
+
+/* download lorem ipsum */
+.border-cus {
+    border: 3px solid var(--coloreGray);
+}
+
+.aspect-ratio {
+    aspect-ratio: 1;
+}
+
+/* footer */
+.footer {
+    background: linear-gradient(white 20%, black 20%);
+    min-height: 85vh;
+}
+
+.disclaimer {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.other-stuff {
+    background: var(--coloreBlue);
+}
+
+/* media query md-lg tablet e laptop */
+@media screen and (min-width:768px) {
+    .p-relative {
+        position: relative;
+    }
+
+    .position-cus {
+        position: absolute;
+        top: -75px;
+        left: 40px;
+    }
+}
+
+/* media query md tablet */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .power-bg {
+        height: 50vh;
+    }
+
+}
+
+/* media query lg laptop */
+@media screen and (min-width:992px) {
+    .power-bg {
+        height: 70vh;
+    }
+
+    .other-stuff {
+        background: linear-gradient(var(--coloreBlue) 75%, black 75%);
+    }
+}
