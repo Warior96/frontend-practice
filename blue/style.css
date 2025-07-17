@@ -1,0 +1,132 @@
+/* variabili */
+:root {
+    --colorBlue: #1566C0;
+    --colorYellow: rgb(255, 193, 6);
+}
+
+/* font */
+* {
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Righteous';
+}
+
+/* color */
+.c-blue {
+    color: var(--colorBlue);
+}
+
+.c-yellow {
+    color: var(--colorYellow);
+}
+
+/* background */
+.bg-blue {
+    background-color: var(--colorBlue);
+}
+
+.bg-yellow {
+    background-color: var(--colorYellow);
+}
+
+/* intestazione e sfondo */
+.sfondo-intestazione {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.742), transparent), url('./media/wave2.svg'), url('./media/wave1.svg'), url('./media/header.jpg') ;
+    background-repeat: no-repeat;
+    background-position: bottom, bottom, center calc(100% - 20px), center;
+}
+
+.intestazione {
+    top: 15%;
+    left: 3%;
+}
+
+/* cards */
+.card-cus-1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95) 98%), url('./media/1.png');
+}
+
+.card-cus-2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95) 98%), url('./media/2.png');
+}
+.card-cus-3 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95) 98%), url('./media/3.png');
+
+}
+.card-cus-4 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 2%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95) 98%), url('./media/4.png');
+}
+
+.card-cus {
+    background-position: center;
+}
+
+.border-cus {
+    border-bottom: 3px solid var(--colorYellow);
+}
+
+/* testo + icone */
+.box-lorem {
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgb(199, 199, 199);
+}
+
+.icons{
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(199, 199, 199);
+    padding: 10px;
+    width: 18%;
+    aspect-ratio: 1;
+}
+
+.ball::after{
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    border: 4px solid var(--colorBlue);
+    border-radius: 50%;
+    background-color: white;
+    top: -50px;
+}
+
+.ball-1::after {
+    right: -30px;
+}
+
+
+.ball-2::after{
+    right: -30px;
+}
+
+.row-cus {
+    height: 80vh;
+    background: linear-gradient(white, transparent, rgba(0, 0, 0, 0.827)), url('./media/footer.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+
+
+/* media query */
+
+/* laptop */
+@media screen and (width>992px) {
+    .card-cus{
+        max-width: 23%;
+    }
+    
+}
+
+/* tablet */
+@media screen and (width>786px) {
+    .ball-2::after {
+        left: -30px;
+    }
+    .mq-border {
+        border-right: 0px !important;
+    }
+}
